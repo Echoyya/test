@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv=""/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css"/>
+    <style>
+        body {
+            font-size: 12px;
+            font-family: "Microsoft YaHei", sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        @font-face {
+            font-family: wjs;
+            src: url(../fonts/MiFie-Web-Font.svg) format('svg'),
+            url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+            url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+            url(../fonts/MiFie-Web-Font.woff) format('woff');
+        }
+
+        .wjs_icon {
+            font-family: wjs;
+        }
+
+        .wjs_sj:before {
+            content: "\e908";
+        }
+
+        .wjs_tel:before {
+            content: "\e909";
+        }
+
+        .wjs_top {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .container > .row > div {
+            height: 40px;
+            border-left: 1px solid #ccc;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .container > .row > div:first-child {
+            border-left: none;
+        }
+
+        .container .row a img {
+            display: none;
+            position: absolute;
+            left: 50%;
+            margin-left: -60px;
+            top: 40px;
+        }
+
+        .container .row a:hover img {
+            display: block;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #333;
+            text-underline: none;
+        }
+
+        .container .btn-default {
+            padding: 3px 6px;
+            background-color: #e92322;
+            font-size: 12px;
+            color: #FFF;
+        }
+
+    </style>
+    <title>demo</title>
+</head>
+<body>
+<header class="wjs_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#">
+                    <span class="wjs_icon wjs_sj"></span>
+                    <span>手机微金所</span>
+                    <span class="glyphicon glyphicon-menu-down "></span>
+                    <img src="../images/code.jpg" alt="code"/>
+                </a>
+            </div>
+            <div class="col-md-5">
+                <span class="wjs_icon wjs_tel"></span><span>4006-89-4006（服务时间：9:00-21:00）</span>
+            </div>
+            <div class="col-md-2">
+                <a href="#">常见问题</a>
+                <a href="#">财富登录</a>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-default btn-register">免费注册</button>
+                <a href="javascript:;">登录</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
